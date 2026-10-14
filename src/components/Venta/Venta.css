@@ -1,0 +1,165 @@
+.venta__encabezado {
+  max-width: 720px;
+  margin-bottom: 32px;
+}
+
+.venta__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.venta__lista {
+  display: grid;
+  gap: 14px;
+}
+
+.venta__item {
+  display: flex;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-sm);
+  padding: 18px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.venta__item:hover {
+  border-color: rgba(74, 124, 47, 0.5);
+  transform: translateX(4px);
+}
+
+.venta__check {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--verde-600);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.venta__item h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.venta__item p {
+  margin: 0;
+  color: var(--gris);
+  font-size: 0.92rem;
+}
+
+.venta__panel {
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 22px;
+  box-shadow: var(--sombra-sm);
+}
+
+.venta__panelTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.venta__panelTop h3 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.venta__panelTop span {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--verde-600);
+  background: var(--verde-100);
+  padding: 5px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.venta__panel ul {
+  list-style: none;
+  margin: 0 0 22px;
+  padding: 0;
+}
+
+.venta__panel li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--borde);
+}
+
+.venta__panel li strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.venta__panel li span {
+  font-size: 0.83rem;
+  color: var(--gris);
+}
+
+.venta__panel li em {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--verde-700);
+  white-space: nowrap;
+}
+
+.venta__panel .btn {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .venta__encabezado {
+    margin-bottom: 46px;
+  }
+
+  .venta__lista {
+    gap: 18px;
+  }
+
+  .venta__item {
+    gap: 18px;
+    padding: 20px 22px;
+  }
+
+  .venta__check {
+    width: 38px;
+    height: 38px;
+    font-size: 0.9rem;
+  }
+
+  .venta__item h3 {
+    font-size: 1.05rem;
+  }
+
+  .venta__panel {
+    padding: 28px;
+    box-shadow: var(--sombra);
+  }
+}
+
+@media (min-width: 901px) {
+  .venta__grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+  }
+
+  .venta__panel {
+    position: sticky;
+    top: calc(var(--nav-h) + 20px);
+  }
+}

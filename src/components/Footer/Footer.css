@@ -1,0 +1,136 @@
+.footer {
+  background: #101208;
+  color: rgba(242, 243, 236, 0.72);
+  padding: 28px 0 calc(16px + env(safe-area-inset-bottom));
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    'logo links'
+    'desc desc';
+  gap: 14px 16px;
+  align-items: start;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__logo {
+  grid-area: logo;
+  display: inline-block;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+.footer__logo img {
+  height: 44px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.footer__desc {
+  grid-area: desc;
+  margin: 0;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  font-style: italic;
+  max-width: 48ch;
+  color: rgba(242, 243, 236, 0.6);
+}
+
+.footer__links {
+  grid-area: links;
+  justify-self: end;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.footer__links a {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: rgba(242, 243, 236, 0.88);
+  transition: color 0.18s ease;
+}
+
+.footer__links a:hover {
+  color: #a8d98a;
+}
+
+.footer__base {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 14px;
+  font-size: 0.66rem;
+  line-height: 1.45;
+  font-style: italic;
+  color: rgba(242, 243, 236, 0.62);
+}
+
+@media (min-width: 561px) {
+  .footer {
+    padding: 44px 0 24px;
+  }
+
+  .footer__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 20px;
+  }
+
+  .footer__logo {
+    border-radius: 14px;
+    padding: 8px;
+  }
+
+  .footer__logo img {
+    height: 56px;
+    border-radius: 8px;
+  }
+
+  .footer__desc {
+    font-size: 0.8rem;
+    font-style: normal;
+    margin-right: auto;
+    max-width: 50ch;
+  }
+
+  .footer__links {
+    align-self: center;
+    gap: 7px;
+  }
+
+  .footer__links a {
+    font-size: 0.85rem;
+  }
+
+  .footer__base {
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    padding-top: 16px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 861px) {
+  .footer {
+    padding: 56px 0 28px;
+  }
+
+  .footer__logo img {
+    height: 74px;
+  }
+
+  .footer__desc {
+    font-size: 0.82rem;
+  }
+}

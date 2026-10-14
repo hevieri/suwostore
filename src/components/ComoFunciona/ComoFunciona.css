@@ -1,0 +1,127 @@
+.como__encabezado {
+  max-width: 700px;
+  margin-bottom: 34px;
+}
+
+.como__pasos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  position: relative;
+  counter-reset: paso;
+}
+
+.como__paso {
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 22px;
+  box-shadow: var(--sombra-sm);
+}
+
+.como__punto {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--verde-600);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 16px;
+  box-shadow: 0 0 0 6px var(--crema);
+}
+
+.como__paso h3 {
+  font-size: 1.05rem;
+}
+
+.como__paso p {
+  margin: 0;
+  color: var(--gris);
+  font-size: 0.92rem;
+}
+
+.como__banner {
+  margin-top: 34px;
+  background: linear-gradient(120deg, var(--verde-700), var(--verde-500));
+  border-radius: var(--radio);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 18px;
+  box-shadow: 0 20px 44px rgba(74, 124, 47, 0.3);
+  color: #fff;
+}
+
+.como__banner h3 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.como__banner p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.como__banner .btn {
+  width: 100%;
+}
+
+@media (min-width: 721px) {
+  .como__encabezado {
+    margin-bottom: 50px;
+  }
+
+  .como__pasos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .como__banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 38px;
+    gap: 24px;
+  }
+
+  .como__banner h3 {
+    font-size: 1.5rem;
+  }
+
+  .como__banner .btn {
+    width: auto;
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width: 981px) {
+  .como__pasos {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .como__pasos::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 6%;
+    right: 6%;
+    height: 2px;
+    background: repeating-linear-gradient(
+      90deg,
+      rgba(74, 124, 47, 0.45) 0 10px,
+      transparent 10px 20px
+    );
+  }
+
+  .como__paso {
+    padding: 26px 22px;
+  }
+}

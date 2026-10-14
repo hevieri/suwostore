@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#fbfcf7"/>
+  <rect x="52" y="52" width="1496" height="796" rx="28" fill="#e4efdb" fill-opacity="0.5" stroke="#4a7c2f" stroke-width="4" stroke-dasharray="22 16"/>
+  <text x="800" y="400" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="140" font-weight="700" fill="#17190f">1600 × 900 px</text>
+  <text x="800" y="492" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="600" fill="#4a7c2f">Horizontal · 16:9</text>
+  <text x="800" y="590" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="44" fill="#5f655a">Tamaño sugerido para las fotos del carrusel (PC)</text>
+  <line x1="150" y1="740" x2="1450" y2="740" stroke="#4a7c2f" stroke-width="4"/>
+  <polygon points="150,740 190,722 190,758" fill="#4a7c2f"/>
+  <polygon points="1450,740 1410,722 1410,758" fill="#4a7c2f"/>
+</svg>
